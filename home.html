@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="swapValue.js"></script>
+
+    <title>
+        Railway reservation system
+    </title>
+
+</head>
+
+<body>
+    <font size="45" color="#ffe165">
+        <div class="heading">
+            <h2>
+                <marquee>Railway Reservation System </marquee>
+            </h2>
+        </div>
+
+    </font>
+    <div class="left-side">
+        <form action="" process.html" method="post" onsubmit="getValues()">
+            <div class="bookingslot">
+                <h2 align="left" class="book-title1">BOOK</h2>
+                <h2 align="center" class="book-title2"> YOUR </h2>
+                <h2 align="left" class="book-title3"> TICKET </h2>
+                <h2 align="right" class="book-title4"> HERE</h2>
+                <ul class="content">
+
+                    <select required="" name="from" onchange="this.form.()" id="d" value="From" required>
+                        <option value>From</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="phagwara">Phagwara</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="jalandhar">Jalandhar</option>
+                        <option value="amritsar">Amritsar</option>
+                        <option value="Ahemdabad">Ahemdabad</option>
+                        <option value="surat">Surat</option>
+                        <option value="jammu">Jammu</option>
+                        <option value="chandigarh">Chandigarh</option>
+                    </select>
+                    <br>
+                    <a id="go" onclick="swapValues()"> <i class="fa fa-exchange rotate90"></i></a>
+                    <br>
+
+
+
+                    <select required name="from" onchange="this.form.()" id="c">
+                        <option value="">To</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="phagwara">Phagwara</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="jalandhar">Jalandhar</option>
+                        <option value="amritsar">Amritsar</option>
+                        <option value="Ahemdabad">Ahemdabad</option>
+                        <option value="surat">Surat</option>
+                        <option value="jammu">Jammu</option>
+                        <option value="chandigarh">Chandigarh</option>
+                    </select>
+                    <br>
+                    <input type="text" name="name" placeholder="Enter your name" required><br>
+
+                    <input type="date" required><br>
+                    <select name="select1" size="1" required>
+                        <option value="All Classes">All Classes</option>
+                        <option value="sanfancisco">Second Class</option>
+                        <option value="Jaipur">First-AC class</option>
+                        <option value="">Second-AC Class</option>
+                        <option value="">Third-AC Class</option>
+                    </select>
+                    <br>
+
+
+
+                    <button type="submit"onClick="function()">Find Trains</button>
+
+
+                </ul>
+            </div>
+
+
+
+
+        </form>
+
+    </div>
+
+    <div class="right-side">
+
+        <ul class="menu-list">
+            <li><a href="home.html" class>HOME</a></li>
+           
+
+            <li>
+                <!-- <a href="#tuesday" class>MEALS</a> -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">MEALS</a>
+                    <div class="dropdown-content">
+                        <a href="#">E-Catering</a>
+                        <a href="#">Standard Menu Rates</a>
+                        
+                    </div>
+                </div>
+            </li>
+<li>
+    <!-- <a href="#wednesday" class>HOIYDAY PACKAGES</a> -->
+            
+                <div class="dropdown">
+                    <a href="#package" class="dropbtn"> HOLIYDAY PACKAGES</a>
+                    <div class="dropdown-content">
+                        <a href="#">Special Trains</a>
+                        <a href="#">Packages</a>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                
+                <div class="dropdown">
+                    <a href="#service-station" class="dropbtn"> SERVICE AT STATION</a>
+                    <div class="dropdown-content">
+                        <a href="#">Wi-Fi Railway Station</a>
+                        <a href="#">Battery Cars</a>
+                        <a href="#">E-Wheelchairs</a>
+                        <a href="#">Retiring Rooms</a>
+                    </div>
+                </div>
+                
+            </li>
+            <li><a href="contact.html" class>CONTACT US</a>
+            
+            </li>
+        </ul>
+        <div class="image">
+            <img height='350px' width='100%'
+                src="train-image.jpg">
+        </div>
+
+
+        <div class="holidays-heading">
+            <h2>HOLIDAYS</h2>
+
+        </div>
+
+        <div class="holiday-list-item">
+            <h2>Tourist Trains</h2>
+            <P class="paragraph">
+                IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for
+                enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno
+                Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations
+                are also available.
+            </P>
+        </div>
+
+
+        <div class="holiday-list-item">
+            <h2>National Packages</h2>
+
+            <P class="paragraph">
+                Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure
+                traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of
+                Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India
+                through IRCTC!
+
+            </P>
+
+        </div>
+
+        <div class="holiday-list-item">
+            <h2>International Packages </h2>
+            <P class="paragraph">Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai,
+                Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are
+                inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free
+                and memorable experience.
+
+            </P>
+        </div>
+    </div>
+
+</body>
+
+</html>
